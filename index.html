@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="fontawesome/all.min.js"></script>
+    <title>BorderRadius GeneratorV2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="output-content">
+            <span>Saída: </span>
+        </div>
+        <div class="borderRadius-previewer-container">
+            <div class="object-radius"></div>
+            <button id="rotate"><i class="fas fa-sync-alt"></i></button>
+        </div>
+        <div class="result-content">
+            <span>Resultado: </span>
+            <div class="background-result-space">
+                <span id="result">
+                    border-radius:
+                    <span id="valueRadius1">50%</span>
+                    <span id="valueRadius2">50%</span>
+                    <span id="valueRadius3">50%</span>
+                    <span id="valueRadius4">50%</span>
+                    ;
+                </span>
+                <input type="text" id="reciveValueText">
+                <button id="copyBtn">
+                    <i class="fas fa-copy"></i>
+                    <span id="animationTextCopy">COPIADO</span>
+                </button>
+            </div>
+        </div>
+        <div class="rangeInput-container">
+            <input type="range" id="range1">
+            <input type="range" id="range2">
+            <input type="range" id="range3">
+            <input type="range" id="range4">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #F0B27A;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #D7DBDD;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.output-content span {
+    cursor: default;
+    font-size: 1.1rem;
+}
+
+.borderRadius-previewer-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.object-radius {
+    width: 250px;
+    height: 250px;
+    background-color: #F0B27A;
+}
+
+#rotate {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#rotate:hover .fa-sync-alt {
+    color: #F0B27A;
+}
+
+.fa-sync-alt {
+    font-size: 1.5rem;
+}
+
+.result-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.result-content span {
+    cursor: default;
+    font-size: 1.1rem;
+}
+
+.background-result-space {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: default;
+}
+
+.background-result-space span {
+    color: #000;
+    font-size: 0.9rem;
+}
+
+.background-result-space input {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.background-result-space button {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    border: none;
+    outline: none;
+    padding: 10px 11px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.fa-copy {
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+.background-result-space button:hover .fa-copy {
+    color: #F0B27A;
+}
+
+.background-result-space button span {
+    position: absolute;
+    top: -60%;
+    right: -35%;
+    opacity: 1;
+    color: #F0B27A;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.rangeInput-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10%;
+}
+
+.rangeInput-container input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    margin: 15px;
+    outline: none;
+    height: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.rangeInput-container input[type="range"]::-webkit-slider-thumb {
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #F0B27A;
+    cursor: pointer;
+}
+
+@keyframes copyTextAnimation {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-200%);
+    }
+}
